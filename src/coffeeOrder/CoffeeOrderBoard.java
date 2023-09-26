@@ -21,7 +21,7 @@ public class CoffeeOrderBoard {
     public void  deliver() {
         if (!orders.isEmpty()) {
             coffeeOrder.Order requiredOrder=orders.poll();
-            System.out.println("Required order "+requiredOrder.getOrderNumber()+requiredOrder.getClient());
+            System.out.println("Required order "+requiredOrder.getOrderNumber()+" "+requiredOrder.getClient());
         }else{
             System.out.println("No orders to deliver.");
         }
@@ -46,7 +46,7 @@ public class CoffeeOrderBoard {
     public void draw() {
         System.out.println("Current orders: ");
         for (Order order : orders) {
-            System.out.println("Order :"+order.getOrderNumber()+"Client: "+order.getClient());
+            System.out.println("Order: "+order.getOrderNumber()+" Client: "+order.getClient());
 
         }
     }
